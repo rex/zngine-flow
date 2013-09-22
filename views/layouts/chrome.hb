@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Example App</title>
     <link rel="stylesheet" href="/assets/zngine.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Zngine Application</h1>
