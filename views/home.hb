@@ -12,5 +12,5 @@
 {{/with}}
 
 {{#unless proofThatThisIsActuallyAServerRequest}}
-	Can't prove this is a real server request :()
+	Can't prove this is a real server request :(
 {{/unless}}
