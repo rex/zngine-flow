@@ -1,0 +1,19 @@
+{
+	"name" : "Zngine",
+	"version" : "0.3.0",
+	"private" : true,
+	"scripts" : {
+		"start" : "node app",
+		"test" : "mocha"
+	},
+	"dependencies": {
+		"chainsjs" : "*",
+		"express" : "3.x",
+		"handlebars" : "1.x",
+		"express3-handlebars" : "*",
+		"mocha" : "*",
+		"rex-shell" : "*",
+		"should" : "*",
+		"underscore" : "*"
+	}
+}
