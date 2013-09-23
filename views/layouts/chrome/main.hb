@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/assets/zngine.css" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-<body>
+<body style="{{#if color}} background: #{{color}}; {{/if}}">
 	<h1>PRODDDDDDDDDDDDDDDDD</h1>
 	<h1>Zngine Application</h1>
 
