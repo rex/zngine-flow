@@ -14,7 +14,7 @@ var path = require('path')
 var app = express()
 
 var hb = exphbs.create({
-		defaultLayout : "chrome",
+		defaultLayout : "chrome/main",
 		extname : ".hb",
 		helpers : helpers
 	})
@@ -47,7 +47,7 @@ _.each(app.routes, function(methods, verb) {
 })
 
 
-var server = http.createServer(app).listen(process.env.PORT, function(){
+var server = http.createServer(app).listen(process.env.PORT || app.get('port') || 3000, function(){
 	console.log("Zngine application started on port " + app.get('port'))
 })
 
