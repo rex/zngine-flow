@@ -23,7 +23,7 @@ hb.loadTemplates("./views")
 
 app.configure(function(){
 	app.engine('.hb', hb.engine )
-	app.set('views', __dirname + '/views');
+	app.set('views', __dirname + '/views')
 	app.set('view engine', '.hb')
 	app.set('port', 3000)
 	app.use(express.static(path.join(__dirname, 'public')))
