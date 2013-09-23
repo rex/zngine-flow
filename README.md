@@ -2,3 +2,13 @@ zngine-flow [ ![Codeship Status for rex/zngine-flow](https://www.codeship.io/pro
 ===========
 
 A proof of concept to illustrate feature branching and continuous integration workflow
+
+
+Links
+---
+
+[Bower](http://bower.io/)
+[Bower Tutorial](http://www.synbioz.com/blog/bower)
+[Express3-Handlebars](https://github.com/ericf/express3-handlebars)
+[Grunt](http://gruntjs.com/)
+[Codeship](https://codeship.io)
