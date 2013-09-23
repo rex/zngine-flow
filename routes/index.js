@@ -10,11 +10,6 @@ exports.define = function(app) {
 
 	scli("Defining Zngine routes...")
 
-	// app.all('*', function(req, res, next) {
-	// 	scli("Request!", req.url, req.route )
-	// 	next()
-	// })
-
 	app.get("/:title?/:subtitle?", Home.page )
 	app.get("/", Home.page )
 
