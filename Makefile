@@ -10,3 +10,4 @@ deploy:
 setup:
 	bower install
 	npm install
+	
