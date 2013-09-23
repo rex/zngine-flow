@@ -5,7 +5,7 @@ var scli = require('rex-shell')
 		Home : require('../chains/home')
 	}
 
-o_o.debug = true
+o_o.debug = false
 
 exports.page = function(req, res) {
 	o_o(
@@ -13,7 +13,7 @@ exports.page = function(req, res) {
 	)(
 		"Set example proof data",
 		function() {
-			this.accumulator.proofThatThisIsActuallyAServerRequest = {
+			this.accumulator.proof = {
 				isAjax : req.xhr,
 				protocol : req.protocol,
 				secure : req.secure,
@@ -22,7 +22,8 @@ exports.page = function(req, res) {
 				params : req.params,
 				body : req.body,
 				queryString : req.query,
-				originalUrl : req.originalUrl
+				originalUrl : req.originalUrl,
+				time : new Date().toLocaleString()
 			}
 			this.next()
 		}
@@ -33,7 +34,10 @@ exports.page = function(req, res) {
 			if(req.xhr) {
 				res.json( 200, this.accumulator )
 			} else {
-				res.render('home', this.accumulator)
+				res.render('user/home', { 
+					data : this.accumulator,
+					layout : "chrome/dev"
+				})
 			}
 		}
 	)()

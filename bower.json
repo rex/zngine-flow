@@ -1,0 +1,11 @@
+{
+	"name": "Zngine",
+	"version": "0.0.1",
+	"dependencies" : {
+		"backbone": "latest",
+		"requirejs": "latest",
+		"jquery": "latest",
+		"zepto": "latest",
+		"underscore": "latest"
+	}
+}

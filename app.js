@@ -38,7 +38,15 @@ app.configure(function(){
 
 routes.define(app)
 
-scli("Loaded routes: ", app.routes)
+scli("Loaded routes: ")
+
+_.each(app.routes, function(methods, verb) {
+	scli.$.blue(verb.toUpperCase() +": "+ methods.length)
+	_.each(methods, function(route) {
+		scli.$.red("\t "+ route.path)
+	})
+})
+
 
 var server = http.createServer(app).listen(app.get('port'), function(){
 	console.log("Zngine application started on port " + app.get('port'))
