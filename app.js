@@ -47,7 +47,7 @@ _.each(app.routes, function(methods, verb) {
 })
 
 
-var server = http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(process.env.PORT, function(){
 	console.log("Zngine application started on port " + app.get('port'))
 })
 
