@@ -13,5 +13,7 @@ results
 
 node_modules/
 .sass-cache/
+assets/components/
+docs/
 
 npm-debug.log
