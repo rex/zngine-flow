@@ -37,7 +37,7 @@ exports.page = function(req, res) {
 				res.render('user/home', { 
 					color : req.query.color,
 					data : this.accumulator,
-					layout : "chrome/dev"
+					layout : "chrome/main"
 				})
 			}
 		}
