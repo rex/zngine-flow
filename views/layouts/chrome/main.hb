@@ -10,7 +10,7 @@
 	<h1>PRODDDDDDDDDDDDDDDDD</h1>
 	<h1>Zngine Application</h1>
 
-	<div style="border: 1px #000 solid; padding: 25px; margin: auto; width: 500px;">
+	<div style="border: 1px #000 solid; padding: 50px; margin: auto; width: 500px;">
     {{{body}}}
   </div>
 </body>
